@@ -1,0 +1,48 @@
+<h1 style="margin-top: 3em;"><center>wellcome {{ user.username }}</center></h1>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  height: 40%;
+  background: #1f9ed5;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  padding-top: 2em;
+}
+
+.fcc-btn {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  margin-left: 30%;
+  
+  
+  
+}
+
+.fcc-btn:hover {
+  background-color: #223094;
+
+}
+</style>
+</head>
+<body>
+    <div class="container">
+    <br>
+    <a href="{% url 'newmeeting'%}" class="fcc-btn">New Meeting</a><br><br><br>
+    <a href="{% url 'joinmeeting' %}" class="fcc-btn">Join Meeting</a><br><br><br>
+    <a href="{% url 'signout' %}" class="fcc-btn">&emsp;Log Out&emsp;</a><br><br><br>
+
+</div>
+</body>
+</html>
